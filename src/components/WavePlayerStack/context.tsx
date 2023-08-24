@@ -8,7 +8,7 @@ const initialState: StackState = {
   activePlayerId: null
 }
 
-const StackContext = createContext<
+export const StackContext = createContext<
   [StackState, React.Dispatch<React.SetStateAction<StackState>>] | undefined
 >(undefined)
 

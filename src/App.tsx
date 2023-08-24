@@ -7,7 +7,7 @@ import './App.css'
 const trackSrcBaseUrl = 'https://kkb-sounds.s3.us-west-1.amazonaws.com/loops/'
 const trackImgBaseUrl = 'https://kkb-sounds.s3.us-west-1.amazonaws.com/images/'
 
-export const tracks: Track[] = [
+const tracks: Track[] = [
   {
     id: 0,
     title: '0_initializer',

@@ -1,4 +1,4 @@
-# @kalynbeach/wave-player
+# wave-player
 
 A music player.
 

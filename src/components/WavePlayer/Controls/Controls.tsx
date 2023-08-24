@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useStack } from '../../WavePlayerStack/context'
 import { useMode } from '../context'
