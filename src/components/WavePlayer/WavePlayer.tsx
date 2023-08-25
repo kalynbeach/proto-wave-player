@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useRef, useEffect } from 'react'
 import { ModeProvider } from './context'
 import Controls from './Controls/Controls'
