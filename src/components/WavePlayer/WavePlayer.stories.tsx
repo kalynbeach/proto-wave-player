@@ -1,4 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { withReactContext } from 'storybook-react-context'
+import { StackContext } from '../WavePlayerStack/context'
 import { WavePlayerMode } from './WavePlayer.types'
 import WavePlayer, { WavePlayerProps } from './WavePlayer'
 
@@ -8,6 +10,14 @@ const meta: Meta<WavePlayerProps> = {
   parameters: {
     layout: 'centered',
   },
+  decorators: [
+    withReactContext({
+      Context: StackContext,
+      initialState: [{
+        activePlayerId: null
+      }]
+    })
+  ],
   argTypes: {
     id: {
       control: {

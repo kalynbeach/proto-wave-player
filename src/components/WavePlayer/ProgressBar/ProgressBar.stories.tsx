@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import ProgressBar, { ProgressBarProps } from './ProgressBar'
 
@@ -41,8 +40,8 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    audioRef: useRef<HTMLAudioElement>(null),
-    progressBarRef: useRef<HTMLInputElement>(null),
+    audioRef: undefined,
+    progressBarRef: undefined,
     timeProgress: 0,
     duration: 0,
   },

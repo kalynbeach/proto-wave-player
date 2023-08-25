@@ -89,10 +89,12 @@ export default function Controls({
   }, [audioRef, duration, progressBarRef, setTimeProgress])
 
   useEffect(() => {
-    if (isPlaying) {
-      audioRef.current!.play()
-    } else {
-      audioRef.current!.pause()
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current!.play()
+      } else {
+        audioRef.current!.pause()
+      }
     }
     playAnimationRef.current = requestAnimationFrame(update)
   }, [audioRef, isPlaying, update])
@@ -108,8 +110,10 @@ export default function Controls({
   }, [isStacked, stackState, setStackState, id])
 
   useEffect(() => {
-    audioRef.current!.volume = volume / 100
-    audioRef.current!.muted = isMuted
+    if (audioRef.current) {
+      audioRef.current!.volume = volume / 100
+      audioRef.current!.muted = isMuted
+    }
   }, [audioRef, volume, isMuted])
 
   return (
