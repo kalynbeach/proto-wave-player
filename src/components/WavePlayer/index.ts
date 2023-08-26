@@ -4,6 +4,7 @@ import { Track, WavePlayerConfig, WavePlayerMode } from './WavePlayer.types'
 
 export {
   WavePlayer,
+  WavePlayerMode,
   ModeContext,
   ModeProvider,
   useMode
@@ -11,6 +12,5 @@ export {
 
 export type {
   Track,
-  WavePlayerConfig,
-  WavePlayerMode
+  WavePlayerConfig
 }

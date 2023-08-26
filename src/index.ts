@@ -1,9 +1,32 @@
-import { Track, WavePlayerConfig, WavePlayerMode } from './components'
+import { 
+  WavePlayer,
+  ModeContext,
+  ModeProvider,
+  useMode,
+  WavePlayerMode,
+  WavePlayerStack,
+  StackContext,
+  StackProvider,
+  useStack,
+  WavePlayerConfig,
+  Track
+} from './components'
+
+export {
+  WavePlayer,
+  ModeContext,
+  ModeProvider,
+  useMode,
+  WavePlayerMode,
+  WavePlayerStack,
+  StackContext,
+  StackProvider,
+  useStack
+}
 
 export type {
   Track,
-  WavePlayerConfig,
-  WavePlayerMode
+  WavePlayerConfig
 }
 
-export * from './components'
+// export * from './components'
