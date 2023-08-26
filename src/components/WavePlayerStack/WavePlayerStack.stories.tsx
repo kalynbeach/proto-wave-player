@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { WavePlayerMode } from '../WavePlayer/WavePlayer.types'
+import { withReactContext } from 'storybook-react-context'
+import { StackContext } from './context'
 import WavePlayerStack, { WavePlayerStackProps } from './WavePlayerStack'
+import { tracks } from '../../tracks'
 
 const meta: Meta<WavePlayerStackProps> = {
   title: 'WavePlayer/WavePlayerStack',
@@ -8,6 +10,14 @@ const meta: Meta<WavePlayerStackProps> = {
   parameters: {
     layout: 'centered',
   },
+  decorators: [
+    withReactContext({
+      Context: StackContext,
+      initialState: [{
+        activePlayerId: null
+      }]
+    })
+  ],
   argTypes: {},
 } satisfies Meta<typeof WavePlayerStack>
 
@@ -17,15 +27,6 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     id: 0,
-    tracks: [
-      {
-        id: 0,
-        title: 'Sample Track',
-        artist: 'Sample Artist',
-        src: '',
-        image: '',
-        mode: WavePlayerMode.Loop
-      },
-    ]
+    tracks: tracks
   }
 }

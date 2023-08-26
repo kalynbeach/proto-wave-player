@@ -3,6 +3,7 @@ import { withReactContext } from 'storybook-react-context'
 import { StackContext } from '../WavePlayerStack/context'
 import { WavePlayerMode } from './WavePlayer.types'
 import WavePlayer, { WavePlayerProps } from './WavePlayer'
+import { tracks } from '../../tracks'
 
 const meta: Meta<WavePlayerProps> = {
   title: 'WavePlayer/WavePlayer',
@@ -53,16 +54,7 @@ export const Default: Story = {
   args: {
     id: 0,
     mode: WavePlayerMode.Loop,
-    tracks: [
-      {
-        id: 0,
-        title: 'Sample Track',
-        artist: 'Sample Artist',
-        src: '',
-        image: '',
-        mode: WavePlayerMode.Loop
-      },
-    ],
+    tracks: tracks,
     isStacked: false,
   }
 }

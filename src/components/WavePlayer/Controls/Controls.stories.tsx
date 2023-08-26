@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { withReactContext } from 'storybook-react-context'
 import { StackContext } from '../../WavePlayerStack/context'
-import { WavePlayerMode } from '../WavePlayer.types'
 import Controls, { ControlsProps } from './Controls'
+import { tracks } from '../../../tracks'
 
 const meta: Meta<ControlsProps> = {
   title: 'WavePlayer/Controls',
@@ -129,16 +129,7 @@ export const Default: Story = {
     progressBarRef: undefined,
     duration: 0,
     timeProgress: 0,
-    tracks: [
-      {
-        id: 0,
-        title: 'Sample Track',
-        artist: 'Sample Artist',
-        src: '',
-        image: '',
-        mode: WavePlayerMode.Loop
-      },
-    ],
+    tracks: tracks,
     trackIndex: 0,
     isLooping: false,
     isStacked: false,
