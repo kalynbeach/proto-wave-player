@@ -64,11 +64,11 @@ export default function WavePlayer({ id, mode, tracks, isStacked }: WavePlayerPr
           loop={isLooping}
           defaultValue={currentTrack.src}
         />
-        <div className='wave-player-inner p-2 flex flex-col md:flex-row gap-2 border border-neutral-900 rounded'>
+        <div className='wave-player-inner p-2 flex flex-col md:flex-row gap-2 bg-neutral-900 border border-neutral-950'>
           <TrackImage
             track={currentTrack}
           />
-          <div className='flex flex-col md:gap-2 justify-between'>
+          <div className='flex flex-col gap-2 justify-between'>
             <TrackInfo
               track={currentTrack}
             />

@@ -7,12 +7,12 @@ type Props = {
 export default function TrackImage({ track }: Props) {
   return (
     <div className='track-image flex justify-center items-center'>
-      <div className='w-72 h-72 md:w-32 md:h-32 bg-neutral-900 rounded'>
+      <div className='w-72 h-72 md:w-32 md:h-32 bg-neutral-900 border border-neutral-950 box-content'>
         { 
           track.image ? (
             <div>
               <img
-                className='w-[64px] h-[64px] md:w-[128px] md:h-[128px]'
+                className='w-72 h-72 md:w-32 md:h-32'
                 src={track.image}
                 alt={track.title}
               />

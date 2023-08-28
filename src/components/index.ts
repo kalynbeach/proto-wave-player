@@ -21,6 +21,3 @@ export type {
   Track,
   WavePlayerConfig
 }
-
-// export * from './WavePlayer'
-// export * from './WavePlayerStack'

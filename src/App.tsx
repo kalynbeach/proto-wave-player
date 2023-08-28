@@ -1,10 +1,16 @@
-import './App.css'
+import { StackProvider, WavePlayerStack } from '.'
+import { tracks } from './tracks'
 
 function App() {
   return (
-    <>
-      <h1>wave-player</h1>
-    </>
+    <div className='w-full min-h-screen flex justify-center'>
+      <StackProvider>
+        <WavePlayerStack
+          id={0}
+          tracks={tracks}
+        />
+      </StackProvider>
+    </div>
   )
 }
 

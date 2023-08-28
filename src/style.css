@@ -9,11 +9,25 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #141414;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 320px) {
+  #storybook-root {
+    padding: 0 !important;
+  }
+}
+
+button svg {
+  transition: color 0.24s ease-in-out;
+}
+
+button svg:hover {
+  stroke: #1AE803;
 }

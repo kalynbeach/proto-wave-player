@@ -12,6 +12,8 @@ import {
   Track
 } from './components'
 
+import './style.css'
+
 export {
   WavePlayer,
   ModeContext,
@@ -28,5 +30,3 @@ export type {
   Track,
   WavePlayerConfig
 }
-
-// export * from './components'

@@ -35,7 +35,7 @@ export default function ProgressBar({
         ref={progressBarRef}
         defaultValue={0}
         onChange={handleProgressChange}
-        className='w-40 md:w-48'
+        className='input-range w-40 md:w-48 accent-[#1AE803]'
       />
       <span className='w-10 md:w-12 text-xs md:text-sm font-mono text-right'>{formatTime(duration)}</span>
     </div>
