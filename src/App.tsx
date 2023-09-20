@@ -3,7 +3,7 @@ import { tracks } from './tracks'
 
 function App() {
   return (
-    <div className='w-full min-h-screen flex justify-center'>
+    <div className='w-full min-h-screen flex justify-center bg-night-900'>
       <StackProvider>
         <WavePlayerStack
           id={0}

@@ -115,7 +115,7 @@ export default function Controls({
   }, [audioRef, volume, isMuted])
 
   return (
-    <div className='controls p-2 flex flex-row gap-2 justify-between border border-neutral-950'>
+    <div className='controls p-2 flex flex-row gap-2 justify-between bg-night-900 border border-night-800'>
       {/* Playback Controls */}
       <div className='w-full flex flex-col md:flex-row gap-2 md:gap-4 justify-between items-center'>
         {/* Playback Buttons */}
